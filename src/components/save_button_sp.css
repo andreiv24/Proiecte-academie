@@ -1,0 +1,14 @@
+.save_button_sp {
+    padding: 10px 24px;
+    background-color: #3475CB;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Mulish-400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+  }

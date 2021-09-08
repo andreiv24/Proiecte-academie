@@ -1,0 +1,127 @@
+1. _.forEach
+Parcurge fiecare element al unui array si aplica aceeasi conditie pentru toate.
+
+
+let users = [
+
+       { firstName: 'John', lastName: Doe'},
+
+       { firstName: 'Gill', lastName: 'Smith'}
+
+];
+
+
+
+let _ = require('lodash');
+
+_.forEach(users, function(user, index) {
+
+    user.fullName = user.firstName + ' ' + user.lastName;
+
+});
+
+// Output
+
+var users = [
+
+       { firstName: 'John', lastName: Doe',fullName:'John Doe'},
+
+       { firstName: 'Gill', lastName: 'Smith',fullName:'Gill Smith'}
+
+];
+
+
+
+2. _.find
+Ajuta la gasirea elementelor dintr-un array pe baza unor criterii.
+
+
+const users = [
+
+{ firstName: "Chris", lastName: "Doe", age: 20 },
+
+{ firstName: "John", lastName: "Doe", age: 10},
+
+{ firstName: "Jim", lastName: "Carrey", age: 54 }
+
+];
+
+ 
+
+let user = _.find(users, { firstName: "Chris" });
+
+// user -> { firstName: "Chris", lastName: "Doe", age: 20}
+
+var underAgeUser = _.find(users, function(user) {
+
+return user.age < 18;
+
+});
+
+// underAgeUser -> { firstName: "John", lastName: "Doe", age: 10 }
+
+
+
+3. _.includes
+
+Aceasta functie returneaza o valoare booleana daca al doilea argument este continut
+in matricea furnizata (primul argument).
+
+
+let names = ["apple", "orange", "mango"];
+
+ 
+
+let result = _.includes(names, "mango");
+
+console.log(result);
+
+// Output : true
+
+
+
+4. _.sortBy
+Permite sortarea array-urilor dupa o valoare specificata.
+
+
+var sortedUsers = _.sortBy(users, 'first');
+
+// Output
+[{
+  age: 25,
+  email: "cassie@codehangar.io",
+  first: "Cassandra",
+  fullName: "Cassandra Wilcox",
+  last: "Wilcox"
+}, {
+  age: 25,
+  email: "mumabah@gmail.com",
+  first: "Georgette",
+  fullName: "Georgette Keough",
+  last: "Keough"
+}, {
+  age: 21,
+  email: "ian@codehangar.io",
+  first: "Ian",
+  fullName: "Ian Grail",
+  last: "Grail"
+}, {
+  age: 35,
+  email: "keith@codehangar.io",
+  first: "Keith",
+  fullName: "Keith Keough",
+  last: "Keough"
+}]
+
+
+5. _.intersection
+Aceasta functie returneaza un nou array cu elementele comune din cele doua array-uri existente.
+
+
+let arr1 = ['mango', 'apple', 'orange'];
+
+let arr2 = ['orange', banana];
+
+let matched = _.intersection(arr1, arr2);
+
+// Output: ['orange'];

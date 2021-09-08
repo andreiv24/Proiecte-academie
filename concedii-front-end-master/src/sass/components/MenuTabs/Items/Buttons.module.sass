@@ -1,0 +1,133 @@
+/* @font-face {
+ *    font-family: Mulish-14;
+ *    src: url("../../../resources/fonts/mulish/Mulish-Regular.ttf");
+ *}
+
+.button
+  &.primary
+    margin-top: 32px
+    height: 48px
+    border-radius: 5px
+    background-color: #7343d9
+    color: white
+    font-family: "Mulish", sans-serif
+    font-weight: bold
+    font-size: 20px
+    border: none
+    width: 100%
+    cursor: pointer
+
+    &:hover
+      background-color: #3c1c85
+      transition: 0.5s ease-in
+
+  &.secondary
+    height: 48px
+    margin-top: 16px
+    border-radius: 5px
+    font-family: "Mulish", sans-serif
+    font-size: 20px
+    font-weight: bold
+    background-color: #ffffff
+    color: #7343d9
+    border: 1px solid #7343d9
+    width: 100%
+    cursor: pointer
+
+    &:hover
+      background-color: #3c1c85
+      color: #ffffff
+      transition: 0.5s ease-in
+
+  &.tertiary
+    background-color: #ffffff
+    color: #515151
+    width: 178px
+    height: 40px
+    cursor: pointer
+    border: none
+    border-radius: 4px
+    text-align: left
+    padding-left: 8px
+    padding-top: 12px
+    padding-bottom: 12px
+    font-size: 13px
+    line-height: 16.32px
+
+    &:hover
+      background-color: #7343d9
+      box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.08)
+      transition: ease-in 0.2s
+      color: #ffffff
+
+    &:active
+      background-color: #3475cb
+      box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.08)
+      transition: ease-in 0.2s
+
+  &.quattrostagioni
+    display: none
+    background-color: #f1f1f1
+    color: #515151
+    width: 178px
+    height: 40px
+    cursor: pointer
+    border: none
+    text-align: left
+    padding-left: 8px
+    padding-top: 12px
+    padding-bottom: 12px
+    font-size: 10px
+    line-height: 12.55px
+
+  &.penta
+    font-family: Mulish-regular, "sans-serif"
+    font-size: 13px
+    line-height: 0
+    color: #696969
+    padding: 8px
+    margin-right: 8px
+    border: none
+    height: 2rem
+
+  &.second-primary-house
+    height: 32px
+    width: 32px
+    padding: 8px 8px
+    font-size: 13px
+    line-height: 16.32px
+    border: none
+    color: #696969
+    background-repeat: no-repeat
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABbCAYAAACWGWDYAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP6SURBVHgB7Zy/TttQFIdP0ggY8wh5BCoBs7N17RMUBiQMS9i6lW7dmi4QiYH0CejaqelWCSR4hPQN6AhCcc+tHAQpSWzfY9/zM+eTokTY4Y8/bN/vJg5Rjdnf3//gblQjXlFNYVFnSZL0+GG0ubnZvry8/E41oEE1o9frtW9vb8/5YTSzaLS6uvq23+/fEDC1Era3t9dpNpvnvGetz1llzMu6g8FgTKDURpiT1Wg0fvDDzpJVoaU1qQbs7u6uZ5Tl+CfWCSZA4IXxho9arVZWWVOctCv3XAIDepR4cHDwju++8W2N8rPG0rZ5BPmHR5C/CARYYa6v+FzUJ3/ebG1t0cXFxU8CAFJYKuuI5IhQpMEJexTE0kAENsywfkEQS6M6sCGEZQhiadS2mnphOYJYGpXSVHdYziD+D37uNd9dUzFUBrZaYQWD+AHeO76urKx0+XzUdY+pGOoCW+Uh0QXxZDIZUkFY0Bc+lD0ZSfJGP+KN7/Pa2OHJyYlE93mhbljvG8T83I8s6/3s13m4PtrY2GBnjYiKoSKwVQkTCOJDlvVp3kIBacEDW40wzyC+4efGLGuwbMVU2u9UWpE5yKCBHfwcJhDEN/f3993T09Nco0E3AuVBjfu5HSpGkMAOKkwgiL1aSaDxKm+1YMK0bCw0aUE6TCKI+XD0WmIjue/hNjiBBHblwqSCWPLc4aShBHalh8Qyglga7YFd2bC+rCCWRntgVyKs7CCWRnNgly6sqiCWRmtgl3YOCxXE0mgL7FKEhQ5iaTS1mrgwxNmDLGj5u0Q7TFMQS6MlsMWEaQxiaTQEtsghESGIpQkV2N7DepQgliZUYHsJQwtiaUIEdmFhqEEsTdWBnfscJvSWaRXvQJKEz2nbLO2MipMpsHONEt2Q9O7uzo0EI/KA9y7oC8NLIuId4WrZsD+zsGk4Vvj+9pfI0lbLJMw3iI1cLJS2VJhvEBuFmBvYC4W5IE73rDYZVdN22z6O4ycj8bnCXGP5zF4YYnx+/HlZzwor4RpiwwPnYiqtNbswDeJtMlThpPHhsf0gbBrEvCAiQyu9B2FpYXepIAKl/yz8X5VQQHhGRvxFXt4pdnhWbkgFqMVnTb0kTBgYJgwMEwaGCQPDhIFhwsAwYWCYMDBaVB/GPNMyyrJiOv3WIUBqI8zJOj4+3smyLk+jDXn9DgFih0QwTBgYJgwMEwaGCQPDhIFhwsAwYWCYMDBMGBgmDAwTBoYJA8OEgWHCwDBhYJgwMEwYGCYMDBMGRpA34bjryOI4Fr+WrAxCX582i+1hYJgwMEwYGCYMDBMGhgkDw4SBYcLAMGFgSM50uOuzhhSIyWSS5+PER/y7BpvBSJJkTAX5C16XlJII2TtOAAAAAElFTkSuQmCC")
+    background-size: 27px, 23px
+    background-position-x: 2px
+    background-position-y: 3px
+
+  &.second-primary
+    height: 32px
+    width: fit-content
+    padding: 8px 8px
+    font-size: 13px
+    line-height: 16.32px
+    border: none
+    color: #696969
+
+  &.second-sortby
+    height: 32px
+    width: 93px
+    padding: 8px 8px
+    font-size: 13px
+    line-height: 16.32px
+    font-family: Mulish-14, sans-serif
+    font-size: 13px
+    line-height: 16.32px
+    border: none
+    text-align: right
+    color: #696969
+    margin-left: 40px
+    background-repeat: no-repeat
+    background-size: 18px, 12px
+    background-position-x: calc(100% - 64px)
+    background-position-y: calc(100% - 10px)
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAAwCAYAAACynDzrAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABnSURBVHgB7dgxDcQwAARB+9kakeF+ECRbWUqkGQjb3c211n9w6zd4JFAQKAgUBAoCBYEAAAB4nfn1T3rvPcdB1nwQKAgUBAoCBYGCQAAAALzO8U/69Gd8mjUfBAoCBYGCQEGgIFC4ADVkCmgVpjwiAAAAAElFTkSuQmCC")

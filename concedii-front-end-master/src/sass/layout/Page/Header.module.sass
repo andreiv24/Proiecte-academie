@@ -1,0 +1,81 @@
+.main-header
+  width: 100%
+  /* position: fixed; */
+  background-color: #7343d9
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  padding: 1rem 5.4375rem
+  padding-top: 0 !important
+  padding-bottom: 1rem !important
+  padding-left: 2rem !important
+  padding-right: 2rem !important
+  /* box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.7); */
+
+ul
+  margin-bottom: 0 !important
+  padding: 0 !important
+
+.main-header__nav
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 0.75rem
+  padding-bottom: 0
+
+.main-header__nav-links 
+  list-style: none
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+.main-header__nav-links li a
+  font: inherit
+  text-decoration: none
+  color: white
+  font-weight: bold
+  padding: 1rem 1rem
+  /* line-height: 1rem; */
+  transition: 0.1s ease-in
+  font-size: 0.8125rem
+  line-height: 0
+
+
+.main-header__nav-links li a:hover,
+.main-header__nav-links li a:focus
+  outline: none
+  background-color: #9072d1
+  color: yellow
+
+.main-header__nav-links li a:focus
+  box-shadow: 0 3px 0 0 yellow
+  box-shadow: 0 -3px 0 0 yellow
+  box-shadow: -3px 0 0 0 yellow
+  box-shadow: 3px 0 0 0 yellow
+  box-shadow: 0 0 0 3px yellow
+
+.left-side
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+p
+  padding: 0
+  margin: 0
+.profile-container
+  position: relative
+  
+@media all and ( max-width: 900px  )
+  .main-header__nav
+    position: absolute
+    background-color: #7343d9
+    padding: 2rem
+    top: 0
+    left: 0
+    z-index: 1
+  .main-header__nav-links
+    flex-direction: column
+    li
+      margin-top: 2rem

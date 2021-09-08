@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Mulish-700';
+    src: url("../font/Mulish-ExtraBold.ttf");
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Mulish-400';
+    src: url("../font/Mulish-Regular.ttf");
+    font-weight: 400;
+  }
+
+.text_sp {
+    font-family: 'Mulish-700';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #515151;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+  }
+  
+  .text_input {
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    box-sizing: border-box;
+    width: 568px;
+    height: 32px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    margin-right: 64px;
+    padding: 8px;
+  }
+  
+  .input_sp {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input_sp_container {
+    position: relative;
+    width: 100%;
+  }
+
+  .svg {
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    cursor: pointer;
+  }
+
+  .text_input::placeholder{
+    font-family: 'Mulish-400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #515151;
+  }

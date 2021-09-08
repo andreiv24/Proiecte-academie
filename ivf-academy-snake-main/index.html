@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <!-- Partea de informatie a website-ului -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Ekans the multiplayer snake game" />
+        <meta name="keywords" content="snake,multiplayer,game,online game" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ekans | First Project</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="./app.css" rel="stylesheet" />
+
+    </head>
+    <!-- Partea vizibila a website-ului -->
+    <body>
+        <section class="d-flex align-items-center fullheight-section">
+            <div class="container text-center">
+                <h1><span class="first-letter">E</span>KANS</h1>
+            
+                <div class="d-flex justify-content-center">
+                    <img class="profile-image" id="IMG_avatar-selection" alt="Avatar Selection" />
+                    <div id="avatar-button-set">
+                        <div class="flex-row">
+                            <label class="label-avatar-type" for="CB_avatar-type">&plusb;</label>
+                            <input type="checkbox" id="CB_avatar-type" />
+
+                            <label class="label-avatar-gender" for="CB_avatar-gender">♂</label>
+                            <input type="checkbox" id="CB_avatar-gender" />
+                        </div>
+                        <div class="flex-row">
+                            <button id="BTN_avatar-reroll">&#x2684;</button>
+                        </div>
+                    </div>
+                    <form class="center" id="login-form">
+                        <input type="text" required placeholder="Enter a username..." id="INP_user-name" pattern="[a-zA-Z0-9 _-]*" maxlength="20" autofocus />
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

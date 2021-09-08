@@ -1,0 +1,40 @@
+.randombutton {
+  background-color: grey;
+  margin-top: 8px;
+  width: 259px;
+  height: 40px;
+  background: #757575;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin-left: 6px;
+  color: #ffffff;
+  border: 0;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.loginbutton {
+  width: 376px;
+  font-family: "Mulish", sans-serif;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #7343d9;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.smallbutton {
+  background-color: #ffffff;
+  border: 0;
+  padding: 10px 14px 10px 13px;
+  position: absolute;
+  display: block;
+  margin-top: 55px;
+  margin-left: 231px;
+}

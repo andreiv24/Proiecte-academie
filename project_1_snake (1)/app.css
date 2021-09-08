@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap');
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.fullheight-section {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: #EFEFEF;
+}
+
+.first-letter {
+    font-size: 3rem;
+    color: #540CF7;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 3px solid #CCCCCC;
+    width: 15vmin;
+    height: 15vmin;
+}
+
+#avatar-button-set {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: column;
+}
+
+#avatar-button-set button {
+    width: 3.5vmin;
+    height: 3.5vmin;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    font-size: 2.5vmin;
+    line-height: 100%;
+}
+
+#avatar-button-set div label {
+    background-color: #EFEFEF;
+    width: 3.5vmin;
+    height: 3.5vmin;
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#avatar-button-set div label {
+    align-self: start;
+    user-select: none;
+}
+
+#avatar-button-set div input[type="checkbox"] {
+    display: none;
+}
+
+.label-avatar-gender {
+    opacity: 0;
+    pointer-events: none;
+}

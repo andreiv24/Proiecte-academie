@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  flex-direction: row;
+  color: rgb(0, 0, 0);
+  border-bottom: 4px solid #D2D2D2;
+}
+
+.absence_text1 {
+  padding: 24px;
+}
+
+.absence_text2 {
+  padding: 24px;
+}
+
+.absence_text3 {
+  padding: 24px;
+}
+
+.absence_text4 {
+  padding: 24px;
+}
+
+.vacation {
+  margin-top: 16px;
+  margin-left: 64px;
+  display: flex;
+}
+
+.datetime {
+  margin-top: 16px;
+  margin-right: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+svg {
+  margin-top: 13px;
+  margin-left: 35px;
+  margin-right: 11px;
+}

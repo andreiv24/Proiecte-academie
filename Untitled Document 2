@@ -1,0 +1,8 @@
+public/index.html
+src/Components/Blog/css/style.css
+src/Components/Footer/stylesFooter.css
+src/Components/Header/index.js
+src/Components/Home/components/aboutBlock.js
+src/Components/Home/components/carouselBlock.js
+src/Components/utils/BlogSlider/index.js
+
